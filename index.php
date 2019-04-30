@@ -7,8 +7,10 @@ if(isset($_POST['submit'])){
     // $mail->Port=5000;
     $mail->SMTPAuth=true;
     $mail->SMTPSecure='tls';
-    $mail->Username='dhillonmohit02@gmail.com';
-    $mail->Password='Mohit@0206';
+    //edit here 
+    $mail->Username='Your_EMAILID';
+    $mail->Password='Your_EMAILID_PASSWORD ';
+    //Edikt-here
     $mail->setFrom($_POST['email'],$_POST['name']);
     $mail->addAddress('dhillonomhit02@gmail.com');
     $mail->addReplyTo($_POST['email'],$_POST['name']);
